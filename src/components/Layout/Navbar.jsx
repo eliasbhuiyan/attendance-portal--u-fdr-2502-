@@ -5,9 +5,9 @@ const Navbar = () => {
   return (
     <nav className="py-5 bg-brand">
       <div className="container flex justify-center gap-10 text-white text-2xl">
-        <Link>Batch List</Link>
-        <Link>Add Students</Link>
-        <Link>Take Attendance</Link>
+        <Link to="/">Batch List</Link>
+        <Link to="/addstudents">Add Students</Link>
+        <Link to="/attendance">Take Attendance</Link>
       </div>
     </nav>
   );

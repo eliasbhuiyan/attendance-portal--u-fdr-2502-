@@ -67,12 +67,15 @@ const Registration = () => {
       .catch((error) => {
         setLoading(false);
         const errorCode = error.code;
+        console.log(errorCode);
+
         if (errorCode == "auth/invalid-email") {
           return setErrors((prev) => ({
             ...prev,
             email: "A valid email is required",
           }));
         }
+
         if (errorCode == "auth/email-already-in-use") {
           return setErrors((prev) => ({
             ...prev,
